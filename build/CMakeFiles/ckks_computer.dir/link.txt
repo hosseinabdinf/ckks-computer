@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ckks_computer.dir/src/main.cpp.o -o ckks_computer  libckks_computer_lib.a 

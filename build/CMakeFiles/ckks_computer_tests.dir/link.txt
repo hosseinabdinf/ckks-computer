@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ckks_computer_tests.dir/tests/test_integer_computer.cpp.o -o ckks_computer_tests  libckks_computer_lib.a 

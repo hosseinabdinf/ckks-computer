@@ -1,0 +1,19 @@
+Start testing: Apr 16 13:13 EEST
+----------------------------------------------------------
+1/1 Testing: ckks_computer_tests
+1/1 Test: ckks_computer_tests
+Command: "/home/hossein/tmp/records/ckks_computer/build/ckks_computer_tests"
+Directory: /home/hossein/tmp/records/ckks_computer/build
+"ckks_computer_tests" start time: Apr 16 13:13 EEST
+Output:
+----------------------------------------------------------
+ckks_computer tests passed
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"ckks_computer_tests" end time: Apr 16 13:13 EEST
+"ckks_computer_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 16 13:13 EEST
