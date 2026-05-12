@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/ckks_computer_bench.dir/bench/bench_integer_computer.cpp.o -o ckks_computer_bench  libckks_computer_lib.a 

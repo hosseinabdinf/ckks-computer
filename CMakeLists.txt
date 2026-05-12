@@ -16,7 +16,28 @@ add_library(ckks_computer_lib
 target_include_directories(ckks_computer_lib PUBLIC src)
 
 if(OpenFHE_FOUND)
-  target_link_libraries(ckks_computer_lib PUBLIC openfhe)
+  message(STATUS "OpenFHE found")
+  message(STATUS "OpenFHE_INCLUDE: ${OpenFHE_INCLUDE}")
+  message(STATUS "OpenFHE_LIBDIR: ${OpenFHE_LIBDIR}")
+  message(STATUS "OpenFHE_SHARED_LIBRARIES: ${OpenFHE_SHARED_LIBRARIES}")
+
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenFHE_CXX_FLAGS}")
+
+  target_include_directories(ckks_computer_lib PUBLIC
+    ${OpenFHE_INCLUDE}
+    ${OpenFHE_INCLUDE}/core
+    ${OpenFHE_INCLUDE}/pke
+    ${OpenFHE_INCLUDE}/binfhe
+    ${OpenFHE_INCLUDE}/third-party/include
+  )
+
+  target_link_directories(ckks_computer_lib PUBLIC
+    ${OpenFHE_LIBDIR}
+  )
+
+  target_link_libraries(ckks_computer_lib PUBLIC
+    ${OpenFHE_SHARED_LIBRARIES}
+  )
 endif()
 
 add_executable(ckks_computer

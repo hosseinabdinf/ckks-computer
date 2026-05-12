@@ -1,2 +1,0 @@
-/usr/bin/ar qc libckks_computer_lib.a CMakeFiles/ckks_computer_lib.dir/src/ckks_computer.cpp.o
-/usr/bin/ranlib libckks_computer_lib.a
